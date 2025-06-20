@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كل سنة وانتِ طيبة يا سلومتي ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --secondary-color: #fce4ec;
+            --text-color: #5a2a2a;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9f9;
+            color: var(--text-color);
+            overflow-x: hidden;
+            text-align: center;
+        }
+        
+        /* صفحة الرسالة */
+        .letter-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1528728329032-2972f65dfb3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+        }
+        
+        .letter-content {
+            max-width: 600px;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            line-height: 1.8;
+            position: relative;
+        }
+        
+        .letter-content:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            height: 10px;
+            background-color: var(--primary-color);
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .next-btn {
+            margin-top: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        
+        .next-btn:hover {
+            background-color: #c2185b;
+            transform: scale(1.05);
+        }
+        
+        /* صفحة الأسباب */
+        .reasons-page {
+            padding: 50px 20px;
+            min-height: 100vh;
+            display: none;
+            background-color: #fff5f7;
+        }
+        
+        .reasons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .reason-box {
+            background-color: var(--secondary-color);
+            padding: 25px;
+            border-radius: 15px;
+            width: 250px;
+            transition: all 0.3s;
+            border: 2px dashed var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .reason-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .reason-box i {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .funny-quote {
+            font-style: italic;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 10px;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--primary-color);
+        }
+        
+        .animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s;
+        }
+        
+        .animate.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* تأثيرات خاصة */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* قسم التهنئة الجديد */
+        .birthday-wish {
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 600px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .love-message {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: var(--primary-color);
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- صفحة الرسالة -->
+    <section id="letter-page" class="letter-page">
+        <div class="letter-content floating">
+            <h2 style="color: var(--primary-color);">كل سنة وانتي طيبة يا سلومتي ❤️</h2>
+            <p>
+                أنا عارف إني نسيت يوم عيد ميلادك، وذا مش حلو مني.<br>
+                بس والله ما نسيتك، إنتي دايمًا في بالي.<br>
+                حاولت أعمل حاجة بسيطة، عشان أقولك كل سنة وانتي طيبة.<br>
+                يعني مش حاجة واو، بس من قلبي.
+            </p>
+            <p>
+                كل سنة وانتِ بخير، وإن شاء الله تكون سنة حلوة عليك.<br>
+                آسف لو قصّرت، وبجد أتمنى تفرحي اليوم.
+            </p>
+        </div>
+        <a href="#reasons" class="next-btn" onclick="showReasons()">أنا أحبك ليه؟</a>
+    </section>
+    
+    <!-- صفحة الأسباب (مخفية أولاً) -->
+    <section id="reasons-page" class="reasons-page">
+        <div class="reasons-container">
+            <!-- السبب الأول: العبط -->
+            <div class="reason-box animate">
+                <i class="fas fa-grin-squint-tears"></i>
+                <h3>عبطك</h3>
+                <p>والله انك عبيطة يعبيطة بس عبطك مش بطال يعني يجي منه ههههخ</p>
+                <div class="funny-quote">"إنتي مشكلة بس من النوع الحلو"</div>
+            </div>
+            
+            <!-- السبب الثاني: الجمال -->
+            <div class="reason-box animate" style="transition-delay: 0.2s;">
+                <i class="fas fa-heart"></i>
+                <h3>جمالك القاتل</h3>
+                <p>إنت بجد أحلى إنسانة شفتها حياتي <span style="color: var(--primary-color);">"هعض خدودك"</span></p>
+                <div class="funny-quote">"ربنا ما يحرمنا من المنظر"</div>
+            </div>
+            
+            <!-- السبب الثالث: الكيوت -->
+            <div class="reason-box animate" style="transition-delay: 0.4s;">
+                <i class="fas fa-paw"></i>
+                <h3>كيوت</h3>
+                <p>من لطافتك وبراءتك، حتى لما تكوني غاضبة بتكوني ظريفة</p>
+                <div class="funny-quote">"الكيوت فيك بيخليك مميزة عن الكل"</div>
+            </div>
+        </div>
+        
+        <!-- قسم التهنئة الجديد -->
+        <div class="birthday-wish animate">
+            <p>عيد ميلاد سعيد يا أحلى سلمى في العالم</p>
+            <div class="love-message">أحبك جداً ❤️</div>
+        </div>
+    </section>
+
+    <script>
+        function showReasons() {
+            document.getElementById('letter-page').style.display = 'none';
+            document.getElementById('reasons-page').style.display = 'block';
+            window.scrollTo(0, 0);
+            
+            // تشغيل تأثيرات الظهور
+            setTimeout(() => {
+                const elements = document.querySelectorAll('.animate');
+                elements.forEach(el => el.classList.add('show'));
+            }, 300);
+        }
+        
+        // تأثيرات عند المرور على الصناديق
+        const boxes = document.querySelectorAll('.reason-box');
+        boxes.forEach((box, index) => {
+            box.addEventListener('mouseenter', () => {
+                if(index === 0) { // صندوق العبط
+                    box.querySelector('i').style.transform = 'rotate(20deg)';
+                    setTimeout(() => {
+                        box.querySelector('i').style.transform = 'rotate(-20deg)';
+                    }, 300);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
